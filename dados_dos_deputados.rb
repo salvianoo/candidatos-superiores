@@ -7,7 +7,7 @@ class DadosDosDeputados
     federais = []
 
     (1..2).each do |pagina|
-      document = Nokogiri::HTML(open("http://www.eleicoes2014.com.br/candidatos-deputado-estadual-goias/#{pagina}/"))
+      document = Nokogiri::HTML(open("http://www.eleicoes2014.com.br/candidatos-deputado-federal-goias/#{pagina}/"))
 
       federais.concat candidatos_com_superior_por_pagina(document)
     end
