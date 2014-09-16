@@ -27,11 +27,11 @@ class DadosDosDeputados
 
 private
 
-  def candidatos_com_superior_por_pagina(doc)
+  def candidatos_com_superior_por_pagina(doc_html)
     candidatos = []
     pool = []
 
-    doc.css('.candidate').each do |link|
+    doc_html.css('.candidate').each do |link|
       link_candidato = link.attr('href')
 
       pool << Thread.new {
