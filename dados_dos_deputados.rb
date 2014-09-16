@@ -1,7 +1,7 @@
 require "nokogiri"
 require "open-uri"
 
-class DadosDosDeputados
+module DadosDosDeputados
 
   def federais_com_superior_completo
     federais = []
